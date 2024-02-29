@@ -1,0 +1,28 @@
+white box is iri database where we can store the database
+it will work key value pair
+
+we have type of whitebox---> POS(POINT OF SALE), PANEL, INVENTORY
+
+we are using inventory type
+
+Basic_dimenstion,
+	1.item_dimenstion
+	2.Time Dimenstion
+	3.Venue Dimenstion
+
+Dynamic_dimenstion
+	there can any number of dynamic dimenstion for retailer based on it's business requirement
+	
+Fact_details
+	INV whiteBox type containe multiple facts
+	
+HQL TEMPLATE
+	
+	
+SSH CONNECTION 
+	the head nodes of hive server and whitebox server are diffrent
+	connection for extracting everything from from HIVE fact table and place them in worker nodes 
+	public_key should be shared by HIVE server and private_key should be shared by other server 
+	
+Measure_Mapping_template:
+	it is available only in INV WB type and it is required for modeling 
