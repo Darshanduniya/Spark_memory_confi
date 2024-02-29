@@ -1,0 +1,30 @@
+In Hadoop, the term "blocks" typically refers to the fundamental unit of storage and distribution for data within the Hadoop Distributed File System (HDFS). HDFS divides large files into smaller blocks, and these blocks are then distributed across the nodes in a Hadoop cluster. Each block is replicated for fault tolerance.
+
+Size: By default, Hadoop blocks are typically 128 megabytes 
+
+
+
+1 core can handle 3-4 task
+
+1 task can handle 40 to 64mb of data
+
+128mb of data ----we need to 2 task
+
+1 gb of data ----8 block---16 task--4 cores
+
++++++++++++++++++++++++
+
+10 gb of data ---80 block--- 160 task ---40 cores --
+
+in order to handle 40 cores how many executor required 
+
+5 core per exectore 
+40/5=8
+
+so 8 executor is required 
+
+1. 10 gb 
+2.12 node cluster, each node 
+
+
+
